@@ -14,6 +14,7 @@ public class LoadSceneOnInput : MonoBehaviour {
 	void Update () {
 		if (Input.GetAxis("Submit") == 1) {
 			SceneManager.LoadScene("Play");
-		}
+            LevelGenerator.ResetMazeCount();
+        }
 	}
 }
